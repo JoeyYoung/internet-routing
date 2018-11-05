@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import gym
+import matplotlib.pyplot as plt
 
 from Actor import Actor
 from Critic import Critic
@@ -39,12 +40,14 @@ for i_episode in range(MAX_EPISODE):
     t = 0
     track_r = []
     while True:
-        if RENDER: env.render()
+        if RENDER:
+            env.render()
 
         a = actor.choose_action(s)
         s_, r, done, info = env.step(a)
 
-        if done: r = -20
+        if done:
+            r = -20
 
         track_r.append(r)
 
@@ -61,6 +64,8 @@ for i_episode in range(MAX_EPISODE):
                 running_reward = ep_rs_sum
             else:
                 running_reward = running_reward * 0.95 + ep_rs_sum * 0.05
-            if running_reward > DISPLAY_REWARD_THRESHOLD: RENDER = True  # rendering
+            if running_reward > DISPLAY_REWARD_THRESHOLD:
+                RENDER = True  # rendering
             print("episode:", i_episode, "  reward:", int(running_reward))
+
             break
