@@ -1,5 +1,5 @@
 import numpy as np
-
+import collections
 
 class T:
     """
@@ -14,6 +14,10 @@ class T:
         self.customers_CP = []
         self.customers_C = []
 
+        # BGP paths
+        table_pc = collections.defaultdict(list)
+        # BGP paths learned from peers
+        table_peer = collections.defaultdict(list)
 
 class M:
     """
@@ -32,6 +36,10 @@ class M:
         self.customers_CP = []
         self.customers_C = []
 
+        # BGP paths
+        table = collections.defaultdict(list)
+        # BGP paths learned from peers
+        table_peer = collections.defaultdict(list)
 
 class CP:
     """
@@ -46,6 +54,10 @@ class CP:
         self.peers_CP = []
         self.peers_M = []
 
+        # BGP paths
+        table = collections.defaultdict(list)
+        # BGP paths learned from peers
+        table_peer = collections.defaultdict(list)
 
 class C:
     """
@@ -57,3 +69,8 @@ class C:
         self.degree = 0
         self.providers_T = []
         self.providers_M = []
+
+        # BGP paths
+        table = collections.defaultdict(list)
+        # BGP paths learned from peers
+        table_peer = collections.defaultdict(list)

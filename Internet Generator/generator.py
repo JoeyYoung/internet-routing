@@ -178,7 +178,12 @@ class Generator:
             im = 0
             for i in range(number_peers):
                 pm = self.Ms[im]
+                # avoid self
                 if pm == m:
+                    im += 1
+                    pm = self.Ms[im]
+                # avoid relationship that have been already built
+                while pm in m.providers_M or pm in m.customers_M:
                     im += 1
                     pm = self.Ms[im]
                 m.peers_M.append(pm)
@@ -198,6 +203,8 @@ class Generator:
             # build relationship
             for i in range(number_peers_m):
                 pm = random.choice(self.Ms)
+                while pm in cp.providers_M:
+                    pm = random.choice(self.Ms)
                 cp.peers_M.append(pm)
                 pm.peers_CP.append(cp)
                 pm.peer_degree += 1
@@ -212,21 +219,56 @@ class Generator:
                 cp.degree += 1
                 cpp.degree += 1
 
+    """
+        considering BGP advertisement to providers
+    """
+    def advertise_c_to_provider(self):
+        # c has no peers, no customers
+        # TODO, from low to high. advertise learned from customer to provider(T, M), M recursion
+
+    def advertise_cp_to_provider(self):
+        # co has peers, no customers
+        # TODO, from low to high. advertise learned from customer to provider(T, M), M recursion
+
+    def advertise_m_to_provider(self):
+        # TODO, used for recursion. advertise learned from customer to provider(T, M), M recursion
+
+    """
+        considering BGP advertisement to peers
+    """
+    def advertise_t_to_peers(self):
+        # TODO, advertise learned from customer to peers
+
+    def advertise_m_to_peers(self):
+        # TODO, advertise learned from customer to peers
+
+    def advertise_cp_to_peers(self):
+        # TODO, advertise learned from customer to peers
+
+    """
+        considering BGP advertisement to customer
+    """
+    def advertise_t_to_customers(self):
+        # TODO, advertise all table(peers, pc) to customers
+
+    def advertise_m_to_customers(self):
+        # TODO, advertise all table(peers, pc) to customers
+
 
 '''
     TEST CASE
 '''
-generator = Generator(1000, 4)
+generator = Generator(10000, 6)
 generator.add_t_nodes()
 generator.add_m_nodes()
 generator.add_c_nodes()
 generator.add_cp_nodes()
 generator.add_m_peers()
 generator.add_cp_peers()
-for m in generator.Ms:
+for m in generator.Cs:
     print(m.degree)
 
-node = generator.CPs[4]
+# node = generator.CPs[4]
 # print(node.id)
 # if len(node.providers_M) > 0:
 #     print(node in node.providers_M[0].customers_CP)
