@@ -4,7 +4,7 @@ import collections
 """
     internet TM, when network has total traffic T, every node has lamda for in and out (2N)
     then every node has a exp distribution on time series
-    
+
     at the same time epoch, get P, then finally T
 """
 
@@ -16,7 +16,7 @@ import collections
         a reserved word in Python.)  Returned values range from 0 to
         positive infinity if lambd is positive, and from negative
         infinity to 0 if lambd is negative.
-        
+
         # lambd: rate lambd = 1/mean
         # ('lambda' is a Python reserved word)
 

@@ -2,6 +2,7 @@ from generator import Generator
 from actor import Actor
 from critic import Critic
 import tensorflow as tf
+import numpy as np
 import collections
 
 
@@ -52,6 +53,17 @@ class Game:
         '''
             loop time as time epoch
         '''
+        for t in self.MAX:
+            # TODO, generate TF, think flow that is not reachable?, or all destinations are reachable
+
+            # every node takes the actions
+            actions = []
+            for i in self.Ns:
+                # node i
+                s = np.array(states[i.id])
+                actions.append(i.actor.choose_action(s))
+
+
 
 
 game = Game()

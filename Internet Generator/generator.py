@@ -611,7 +611,7 @@ def build_topology(self):
     self.add_cp_nodes()
     self.add_m_peers()
     self.add_cp_peers()
-    print "nodes added"
+    print ("nodes added")
 
     self.advertise_c_to_provider()
     self.advertise_cp_to_provider()
@@ -624,12 +624,15 @@ def build_topology(self):
     self.advertise_cp_to_peers()
     self.advertise_t_to_customers()
     self.advertise_m_to_customers()
-    print "advertisement finished"
+    print("advertisement finished")
 
+    for i in self.Ms:
+		print(len(i.table)+len(i.table_peer))
 
 '''
     TEST CASE
 '''
+
 
 # for m in generator.Cs:
 #     for t in m.providers_M:
