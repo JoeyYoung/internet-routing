@@ -19,7 +19,7 @@ class Actor:
         with tf.variable_scope('Actor' + str(id)):
             l1 = tf.layers.dense(
                 inputs=self.s,
-                units=20,
+                units=5,
                 activation=tf.nn.relu,
                 kernel_initializer=tf.random_normal_initializer(mean=0, stddev=0.1),
                 bias_initializer=tf.constant_initializer(0.1),

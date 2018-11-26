@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e8f641e9-e8d0-4220-94a2-7e12ef12022a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/actor.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/agent.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/critic.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/env.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="e8f641e9-e8d0-4220-94a2-7e12ef12022a" name="Default Changelist" comment="" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,15 @@
     <session id="1403421992">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.open.time.25" value="1" />
           <entry key="project.opened" value="1" />
+=======
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.opened" value="2" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,6 +55,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/env.py">
@@ -53,6 +65,16 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#549#2188#0" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
                 <marker date="1541439553539" expanded="true" signature="53:54" ph="..." />
               </folding>
             </state>
@@ -63,9 +85,14 @@
         <entry file="file://$PROJECT_DIR$/agent.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
+<<<<<<< HEAD
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="e#346#2979#0" />
+=======
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
                 <marker date="1541438835943" expanded="true" signature="32:33" ph="..." />
               </folding>
             </state>
@@ -75,7 +102,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/actor.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1159">
+=======
+            <state relative-caret-position="1140">
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
               <caret line="61" column="79" selection-start-line="61" selection-start-column="79" selection-end-line="61" selection-end-column="79" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -87,8 +118,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/critic.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="57">
               <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+=======
+            <state relative-caret-position="38">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -173,6 +209,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-7" width="1231" height="735" extended-state="6" />
+<<<<<<< HEAD
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -182,6 +219,12 @@
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+=======
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24937238" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -189,6 +232,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -198,26 +248,46 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/actor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
           <caret line="61" column="79" selection-start-line="61" selection-start-column="79" selection-end-line="61" selection-end-column="79" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1541439553539" expanded="true" signature="53:54" ph="..." />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/critic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1541438835943" expanded="true" signature="32:33" ph="..." />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/agent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -225,10 +295,19 @@
           <folding>
             <element signature="e#346#2979#0" />
             <marker date="1541438835943" expanded="true" signature="32:33" ph="..." />
+=======
+    <entry file="file://$PROJECT_DIR$/actor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="61" column="79" selection-start-line="61" selection-start-column="79" selection-end-line="61" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/env.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
@@ -237,6 +316,14 @@
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#549#2188#0" />
             <marker date="1541439553539" expanded="true" signature="53:54" ph="..." />
+=======
+    <entry file="file://$PROJECT_DIR$/critic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+>>>>>>> a3cf94ad0084a2304942577580a4d19222ae49fb
           </folding>
         </state>
       </provider>

@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class Agent:
     def __init__(self, id, paths):
         self.id = id
@@ -21,7 +22,7 @@ class Agent:
                     for k in self.paths[3]:
                         for m in self.paths[4]:
                             acts = []
-                            acts.append(-1)  # represent this
+                            acts.append(-1)  # represent self id
                             acts.append(i)
                             acts.append(j)
                             acts.append(k)
