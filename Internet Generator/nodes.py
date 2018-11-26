@@ -1,16 +1,15 @@
-import numpy as np
 import collections
 import random
 
 all_regions = [1, 2, 3, 4]
 
 
-def choose_regions(list, num):
+def choose_regions(l, num):
     results = []
     while len(results) < num:
-        a = random.choice(list)
+        a = random.choice(l)
         while a in results:
-            a = random.choice(list)
+            a = random.choice(l)
         results.append(a)
     return results
 
@@ -38,6 +37,18 @@ class T:
         self.table = collections.defaultdict(list)
         # BGP paths learned from peers
         self.table_peer = collections.defaultdict(list)
+
+        # RL setting
+        self.actor = None
+        self.critic = None
+        self.action_labels = self.init_action_label()
+        self.n_actions = len(self.action_labels)
+
+    def init_action_label(self):
+        action_labels = []
+        # dim: table.keys()
+        # TODO, build actions set
+        return action_labels
 
 
 class M:
@@ -69,6 +80,18 @@ class M:
         # BGP paths learned from peers
         self.table_peer = collections.defaultdict(list)
 
+        # RL setting
+        self.actor = None
+        self.critic = None
+        self.action_labels = self.init_action_label()
+        self.n_actions = len(self.action_labels)
+
+    def init_action_label(self):
+        action_labels = []
+        # dim: table.keys()
+        # TODO, build actions set
+        return action_labels
+
 
 class CP:
     """
@@ -94,6 +117,18 @@ class CP:
         # BGP paths learned from peers
         self.table_peer = collections.defaultdict(list)
 
+        # RL setting
+        self.actor = None
+        self.critic = None
+        self.action_labels = self.init_action_label()
+        self.n_actions = len(self.action_labels)
+
+    def init_action_label(self):
+        action_labels = []
+        # dim: table.keys()
+        # TODO, build actions set
+        return action_labels
+
 
 class C:
     """
@@ -112,3 +147,15 @@ class C:
         self.table = collections.defaultdict(list)
         # BGP paths learned from peers
         self.table_peer = collections.defaultdict(list)
+
+        # RL setting
+        self.actor = None
+        self.critic = None
+        self.action_labels = self.init_action_label()
+        self.n_actions = len(self.action_labels)
+
+    def init_action_label(self):
+        action_labels = []
+        # dim: table.keys()
+        # TODO, build actions set
+        return action_labels
