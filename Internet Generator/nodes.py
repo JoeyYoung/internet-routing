@@ -1,5 +1,24 @@
 import numpy as np
 import collections
+import random
+
+all_regions = [1, 2, 3, 4]
+
+
+def choose_regions(list, num):
+    results = []
+    while len(results) < num:
+        a = random.choice(list)
+        while a in results:
+            a = random.choice(list)
+        results.append(a)
+    return results
+
+
+"""
+    table: id:[ [path1], [path2] ]
+"""
+
 
 class T:
     """
@@ -13,11 +32,13 @@ class T:
         self.customers_M = []
         self.customers_CP = []
         self.customers_C = []
-
+        # T can represented in all regions
+        self.regions = choose_regions(all_regions, 4)
         # BGP paths
-        table_pc = collections.defaultdict(list)
+        self.table = collections.defaultdict(list)
         # BGP paths learned from peers
-        table_peer = collections.defaultdict(list)
+        self.table_peer = collections.defaultdict(list)
+
 
 class M:
     """
@@ -28,6 +49,13 @@ class M:
         self.id = id
         self.degree = 0
         self.peer_degree = 0
+        # 0.2 M is in two regions, other only one
+        pro = random.random()
+        if pro <= 0.2:
+            self.regions = choose_regions(all_regions, 2)
+        else:
+            self.regions = choose_regions(all_regions, 1)
+
         self.providers_T = []
         self.providers_M = []
         self.peers_M = []
@@ -37,9 +65,10 @@ class M:
         self.customers_C = []
 
         # BGP paths
-        table = collections.defaultdict(list)
+        self.table = collections.defaultdict(list)
         # BGP paths learned from peers
-        table_peer = collections.defaultdict(list)
+        self.table_peer = collections.defaultdict(list)
+
 
 class CP:
     """
@@ -49,15 +78,22 @@ class CP:
     def __init__(self, id):
         self.id = id
         self.degree = 0
+        pro = random.random()
+        if pro < 0.05:
+            self.regions = choose_regions(all_regions, 2)
+        else:
+            self.regions = choose_regions(all_regions, 1)
+
         self.providers_T = []
         self.providers_M = []
         self.peers_CP = []
         self.peers_M = []
 
         # BGP paths
-        table = collections.defaultdict(list)
+        self.table = collections.defaultdict(list)
         # BGP paths learned from peers
-        table_peer = collections.defaultdict(list)
+        self.table_peer = collections.defaultdict(list)
+
 
 class C:
     """
@@ -67,10 +103,12 @@ class C:
     def __init__(self, id):
         self.id = id
         self.degree = 0
+        self.regions = choose_regions(all_regions, 1)
+
         self.providers_T = []
         self.providers_M = []
 
         # BGP paths
-        table = collections.defaultdict(list)
+        self.table = collections.defaultdict(list)
         # BGP paths learned from peers
-        table_peer = collections.defaultdict(list)
+        self.table_peer = collections.defaultdict(list)
