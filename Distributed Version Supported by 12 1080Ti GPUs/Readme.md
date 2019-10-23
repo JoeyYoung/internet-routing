@@ -1,2 +1,2 @@
 ## Testbed Implement
-![testbed](./distributed.pdf)
+![](./distributed.png)
