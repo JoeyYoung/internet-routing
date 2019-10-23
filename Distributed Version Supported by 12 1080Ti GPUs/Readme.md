@@ -1,2 +1,2 @@
 ## Testbed Implement
-![avatar](./distributed.pdf)
+![testbed](./distributed.pdf)
