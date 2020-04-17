@@ -1,2 +1,0 @@
-## Testbed Implement
-![](./distributed.png)
